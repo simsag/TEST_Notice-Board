@@ -1,38 +1,71 @@
 .App {
-  text-align: center;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.board-section {
+  display: flex;
+  justify-content: center; /* 가로 중앙 정렬 */
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+}
+a {
+  color: #484848;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+a:hover {
+  color: #666666;
+}
+
+header {
+  display: flex;
+  height: 60px;
+  width: 80%;
+  border-bottom: 1px solid #d0cfcf;
+  justify-content: space-between;
+}
+
+#headerSpeechBubble {
+  width: 500px;
+  height: 40px;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #dcffc0;
+  border: 1px solid #88ea66;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #585858;
 }
 
-.App-link {
-  color: #61dafb;
+#logo {
+  display: inline-block;
+  margin: 0 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-ko {
+  margin-top: 20px;
+}
+
+#postButton {
+  padding-top: 5px;
 }
